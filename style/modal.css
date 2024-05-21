@@ -1,0 +1,152 @@
+html body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.75rem;
+}
+
+.modal-CSS {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-dialog-CSS {
+    position: relative;
+    margin: 10% auto;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  
+  .modal-content-CSS {
+    position: relative;
+    background-color: #fff;
+    border-radius: .3rem;
+    outline: 0;
+  }
+  
+  .modal-header-CSS {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f8f9fa;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+  }
+  
+  .modal-title-CSS {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+  }
+  
+  .close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: .75;
+  }
+  
+  .modal-body-CSS {
+    position: relative;
+    padding: 15px;
+  }
+  
+  .modal-footer-CSS {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+  }
+  
+  .btn-CSS {
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    margin: 0 2px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .btn-CSS:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .info-icon {
+    /* Set the width and height to a smaller size */
+    width: 25px; /* Example width for a smaller icon */
+    height: 25px; /* Example height for a smaller icon */
+    /* You may need to adjust the width and height to fit your specific design */
+  }
+
+  .info-icon-CSS {
+    cursor: pointer;
+    /* Set the width and height to a smaller size */
+    width: 25px; /* Example width for a smaller icon */
+    height: 25px; /* Example height for a smaller icon */
+    /* You may need to adjust the width and height to fit your specific design */
+  }
+
+.line-numbers a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+    line-height: 0.9 !important;
+}
+
+pre > code {
+    padding: 0;
+}
+
+.tag {
+  color: #d14; /* red */
+}
+.attribute {
+  color: #3333BB; /* blue */
+}
+.attribute-value {
+  color: #008000; /* green */
+}
+.text {
+  color: #000000; /* black */
+}
+/* Additional styles to remove default hyperlink styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}

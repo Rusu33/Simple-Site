@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal - Bootstrap VS CSS</title>
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/assets//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/assets/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+<a href="index.html" class="btn btn-primary">Home</a>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MG8VMWYNKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MG8VMWYNKH');
+</script>
+<body>
+
+<div class="container">
+    <h3>Code Examples</h3>
+    <br>
+    <div class="Bootstrap">
+          <h4>Bootstrap</h4>
+          <img src="./imgs/info.png" class="info-icon" data-toggle="modal" data-target="#myModal" alt="Info">
+        
+          <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Opening Hours</h5>
+                          <button type="button" class="close" data-dismiss="modal">
+                              <span>&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>We are open on:<br>
+                                <strong>Weekdays</strong>  : 09:00 to 17:00<br>
+                                <strong>Saturdays</strong> : 10:00 to 13:00<br>
+                                <br>
+                                We are closed on Sundays.
+                          </p>
+                      </div>
+                      <div class="modal-footer">
+                          <button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                      </div>
+                  </div>
+              <br>
+          </div>
+    </div>
+    <div class="language-html highlighter-coderay">
+        <div class="CodeRay">
+          <div class="code">
+            <div class="language-html highlighter-coderay">
+                <div class="CodeRay">
+                  <div class="code">
+                    <br>
+                    <pre>
+<a href="#n1" name="n1"><span class="line-numbers">1</span></a><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="attribute-value">"./imgs/info.png"</span> <span class="attribute-name">class</span>=<span class="attribute-value">"info-icon"</span> <span class="attribute-name">data-toggle</span>=<span class="attribute-value">"modal"</span> <span class="attribute-name">data-target</span>=<span class="attribute-value">"#myModal"</span> <span class="attribute-name">alt</span>=<span class="attribute-value">"Info"</span><span class="tag">&gt;</span><br>
+<a href="#n2" name="n2"><span class="line-numbers">2</span></a><span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="attribute-value">"modal fade"</span> <span class="attribute-name">id</span>=<span class="attribute-value">"myModal"</span><span class="tag">&gt;</span><br>
+<a href="#n3" name="n3"><span class="line-numbers">3</span></a>    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="attribute-value">"modal-dialog"</span><span class="tag">&gt;</span><br>
+<a href="#n4" name="n4"><span class="line-numbers">4</span></a>        <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="attribute-value">"modal-content"</span><span class="tag">&gt;</span><br>
+<a href="#n5" name="n5"><span class="line-numbers">5</span></a>            <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="attribute-value">"modal-header"</span><span class="tag">&gt;</span><br>
+<a href="#n6" name="n6"><span class="line-numbers">6</span></a>                <span class="tag">&lt;h5</span> <span class="attribute-name">class</span>=<span class="attribute-value">"modal-title"</span><span class="tag">&gt;</span>Opening Hours<span class="tag">&lt;/h5&gt;</span><br>
+<a href="#n7" name="n7"><span class="line-numbers">7</span></a>                <span class="tag">&lt;button</span> <span class="attribute-name">type</span>=<span class="attribute-value">"button"</span> <span class="attribute-name">class</span>=<span class="attribute-value">"close"</span> <span class="attribute-name">data-dismiss</span>=<span class="attribute-value">"modal"</span><span class="tag">&gt;</span><br>
+<a href="#n8" name="n8"><span class="line-numbers">8</span></a>                    <span class="tag">&lt;span&gt;</span>&times;<span class="tag">&lt;/span&gt;</span><br>
+<a href="#n9" name="n9"><span class="line-numbers">9</span></a>                <span class="tag">&lt;/button&gt;</span><br>
+<a href="#n10" name="n10"><span class="line-numbers">10</span></a>              <span class="tag">&lt;p&gt;</span>We are open on:<span class="tag">&lt;br&gt;</span><br>
+<a href="#n11" name="n11"><span class="line-numbers">11</span></a>              <span class="tag">&lt;strong&gt;</span>Weekdays<span class="tag">&lt;/strong&gt;</span><span class="text">: 09:00 to 17:00</span><span class="tag">&lt;br&gt;</span><br>
+<a href="#n12" name="n12"><span class="line-numbers">12</span></a>              <span class="tag">&lt;strong&gt;</span>Saturdays<span class="tag">&lt;/strong&gt;</span><span class="text">: 10:00 to 13:00</span><span class="tag">&lt;br&gt;</span><br>
+<a href="#n13" name="n13"><span class="line-numbers">13</span></a>              <span class="tag">&lt;br&gt;</span><br>
+<a href="#n14" name="n14"><span class="line-numbers">14</span></a>              We are closed on Sundays.<br>
+<a href="#n15" name="n15"><span class="line-numbers">15</span></a>              <span class="tag">&lt;/p&gt;</span><br>
+<a href="#n16" name="n16"><span class="line-numbers">16</span></a>            <span class="tag">&lt;/div&gt;</span><br>
+<a href="#n17" name="n17"><span class="line-numbers">17</span></a>          <span class="tag">&lt;div</span> <span class="attribute">class</span>=<span class="attribute-value">"modal-footer"</span><span class="tag">&gt;</span><br>
+<a href="#n18" name="n18"><span class="line-numbers">18</span></a>        <span class="tag">&lt;button</span> <span class="attribute">class</span>=<span class="attribute-value">"btn btn-primary"</span> <span class="attribute">data-dismiss</span>=<span class="attribute-value">"modal"</span><span class="tag">&gt;</span>Cancel<span class="tag">&lt;/button&gt;</span><br>
+<a href="#n19" name="n19"><span class="line-numbers">19</span></a>      <span class="tag">&lt;/div&gt;</span><br>
+<a href="#n20" name="n20"><span class="line-numbers">20</span></a>    <span class="tag">&lt;/div&gt;</span><br>
+<a href="#n21" name="n21"><span class="line-numbers">21</span></a>  <span class="tag">&lt;/div&gt;</span><br>
+<a href="#n22" name="n22"><span class="line-numbers">22</span></a><span class="tag">&lt;/div&gt;</span><br>
+
+                    </pre>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      
+    <div class="css">
+          <h4>CSS/JS</h4>
+          <img src="./imgs/info-css.png" class="info-icon-CSS" alt="Info" onclick="openModal()">
+
+          <div class="modal-CSS" id="myModal-CSS">
+              <div class="modal-dialog-CSS">
+                  <div class="modal-content-CSS">
+                      <div class="modal-header-CSS">
+                          <h5 class="modal-title-CSS">Opening Hours</h5>
+                          <span class="close" onclick="closeModal()">&times;</span>
+                      </div>
+                      <div class="modal-body-CSS">
+                          <p>We are open on:<br>
+                              <strong>Weekdays</strong>: 09:00 to 17:00<br>
+                              <strong>Saturdays</strong>: 10:00 to 13:00<br>
+                              <br>
+                              We are closed on Sundays.
+                          </p>
+                      </div>
+                      <div class="modal-footer-CSS">
+                          <button class="btn-CSS" onclick="closeModal()">Cancel</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+          <script>
+              function openModal() {
+                  document.getElementById('myModal-CSS').style.display = 'block';
+              }
+              
+              function closeModal() {
+                  document.getElementById('myModal-CSS').style.display = 'none';
+              }
+              
+              // Optional: Close the modal if the user clicks outside of it
+              window.onclick = function(event) {
+                  let modal = document.getElementById('myModal-CSS');
+                  if (event.target == modal) {
+                  closeModal();
+                  }
+              }        
+          </script>
+    <br>
+    <div></div>
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

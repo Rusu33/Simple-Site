@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDP3 - Bootstrap Framework</title>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/assets//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/assets/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MG8VMWYNKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MG8VMWYNKH');
+</script>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#advantages-disadvantages">Advantages & Disadvantages</a></li>
+        <li><a href="#code-examples">Code Examples</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <label class="toggle">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </ul>
+    </nav>
+
+    <article>
+        <h1 class="intro">Introduction</h1>
+        <section class="section">
+          <h2>What is Bootstrap?</h2>
+          <p>
+            Bootstrap is a free and open-source CSS framework directed at 
+            responsive, mobile-first front-end web development. It contains CSS- 
+            and JavaScript-based design templates for typography, forms, buttons, 
+            navigation, and other interface components.
+          </p>
+        </section>
+        <section class="section">
+        <h2>What is it used for?</h2>
+          <p>
+            Bootstrap is used for designing and developing responsive websites and 
+            web applications. Its grid system, prebuilt components, and powerful plugins 
+            built on jQuery help in creating dynamic and responsive layouts.
+          </p>
+          <br>
+        </section>
+
+        <section class="section">
+          <h2>History of Bootstrap</h2>
+          <p>Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter 
+            to encourage consistency across internal tools. It was released as an 
+            open-source project in August 2011 and has since become one of the most popular 
+            front-end frameworks.
+          </p>
+          <p class="aside">
+            Bootstrap 5 was released in 2021!
+          </p>
+        </section>
+        
+      <section class="section" id="getting-started">
+          <h1>Getting Started</h1>
+          <h2>Installation</h2>
+          <p>Bootstrap can be installed using various methods including direct download, using a CDN, or through package managers like npm or yarn. Integration involves including Bootstrap's CSS and JavaScript files in the web project.
+             More installation methods can be found at the <a href="https://getbootstrap.com/">Bootstrap</a>
+             official website.
+          </p>
+          <div class="language-html highlighter-coderay">
+            <div class="CodeRay">
+              <div class="code">
+                <pre>
+<span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#606"><span>&lt;</span><span>link</span> <span>rel=</span><span style="color:#404">&quot;stylesheet&quot;</span> <span>href=</span><span style="color:#404">&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css&quot;</span> <span>integrity=</span><span style="color:#404">&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot;</span> <span>crossorigin=</span><span style="color:#404">&quot;anonymous&quot;</span><span>&gt;</span></span>
+<span class="line-numbers"><a href="#n2" name="n1">2</a></span><span style="color:#606"><span>&lt;</span><span>script</span> <span>src=</span><span style="color:#404">&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot;</span> <span>integrity=</span><span style="color:#404">&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot;</span> <span>crossorigin=</span><span style="color:#404">&quot;anonymous&quot;</span><span>&gt;&lt;/script&gt;</span>
+<span class="line-numbers"><a href="#n3" name="n2">3</a></span><span style="color:#606"><span>&lt;</span><span>script</span> <span>src=</span><span style="color:#404">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot;</span> <span>integrity=</span><span style="color:#404">&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot;</span> <span>crossorigin=</span><span style="color:#404">&quot;anonymous&quot;</span><span>&gt;&lt;/script&gt;</span>
+<span class="line-numbers"><a href="#n4" name="n3">4</a></span><span style="color:#606"><span>&lt;</span><span>script</span> <span>src=</span><span style="color:#404">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot;</span> <span>integrity=</span><span style="color:#404">&quot;sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl&quot;</span> <span>crossorigin=</span><span style="color:#404">&quot;anonymous&quot;</span><span>&gt;&lt;/script&gt;</span>
+                </pre>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <figure>
+        <img srcset="./imgs/bootstrap-5-small.jpg 480w,
+                    ./imgs/bootstrap-5-medium.jpg 800w,
+                    ./imgs/bootstrap-5-large.jpg 1200w"
+        sizes="(max-width: 600px) 480px,
+               (max-width: 900px) 800px,
+               1200px"
+        src="./imgs/bootstrap-5-medium.jpg" 
+        alt="Bootstrap 5"
+        class="img-class">
+      
+          <figcaption>Credits: bootstrapdash.com</figcaption>
+      </figure>
+
+      <section class="section" id="advantages-disadvantages">
+        <h1>Advantages and Disadvantages</h1>
+        <details>
+            <summary><pc class="sum">Pros</p></summary>
+            <ul class="pros">
+                <li><strong>Responsiveness:</strong> Bootstrap's grid system and responsive classes make it easy to create designs that work on all devices and screen sizes.</li>
+                <li><strong>Pre-styled Components:</strong> Provides a range of pre-designed components that can be easily customized and integrated.</li>
+                <li><strong>Strong Community Support:</strong> Being one of the most popular frameworks, it has a large community and extensive documentation.</li>
+            </ul>
+        </details>
+        <details>
+            <summary><pc class="sum">Cons</p></summary>
+            <ul class="cons">
+                <li><strong>Similarity in Design:</strong> Websites using Bootstrap can often look similar due to the use of standard components.</li>
+                <li><strong>Learning Curve:</strong> While Bootstrap simplifies web development, there is still a learning curve for beginners.</li>
+                <li><strong>Heavy File Size:</strong> The full package of Bootstrap can be large, potentially affecting load times.</li>
+            </ul>
+        </details>
+    </section>    
+
+      <section id="code-examples">
+        <h1>Code Examples</h1>
+        <div class="subsection">
+          <h2>Working Principle</h2>
+          <ul>
+            <li>
+              <em>Example: </em><a href="./example.html">Buttons & Forms</a><br>
+            </li>
+            <li>
+              <em>Example: </em><a href="./simple_grid.html">Simple Grid</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="subsection">
+          <h2>Advantages</h2>
+          <ul>
+            <li><strong>Responsive Components</strong><br>
+              <em>Example: </em><a href="./modal.html">Modals</a><br>
+              <em>Example: </em><a href="./navbar.html">Responsive Navbar</a> 
+            </li>
+          </ul>
+          <h2>Disadvantages</h2>
+          <ul>
+            <li><strong>Source Order Precedence</strong><br>
+              <em>Example: </em><a href="./image_grid.html">Image Grid</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h1>Challenges & Lessons Learnt</h1>
+        <ol>
+          <li>Overriding Bootstrap Stylesheet - via Specificity or worst-case <code class="attribute">!important</code></li>
+          <li>Order Precedence workaround - <br>
+            Stackoverflow <em>"Solution"</em> : <code class="attribute">grid-auto-flow :</code><code></code><code class="attribute-value">dense</code> ?</li>
+        </ol>
+      </section>
+
+      <section class="section" id="conclusion">
+        <h1>Conclusion</h1>
+        <p>Bootstrap is a powerful tool for web developers, striking a balance between ease of use and flexibility. It is an excellent choice for those looking to build responsive, mobile-first websites with a standardized look and feel.</p>
+      </section>
+
+      <section class="section">
+        <h1>References</h1>
+        <p>Bootstrap Favicon: FlatIcon</p>
+      </section>
+    </article>
+
+  </body>
+  <script>
+    // Smooth scroll for navbar links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  
+    // Dark mode toggle
+    document.getElementById('dark-mode-toggle').addEventListener('change', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Function to update active tab
+    function updateActiveTab() {
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            if (location.hash && link.getAttribute('href') === location.hash) {
+                link.classList.add('active-tab');
+            } else {
+                link.classList.remove('active-tab');
+            }
+        });
+    }
+
+    // Event listener for hash change
+    window.addEventListener('hashchange', updateActiveTab);
+
+    // Event listener for document ready
+    document.addEventListener('DOMContentLoaded', updateActiveTab);
+
+    // Apply active tab class on click
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.classList.remove('active-tab');
+            });
+            link.classList.add('active-tab');
+        });
+    });
+
+  </script>
+  
+</html>

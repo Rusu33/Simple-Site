@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="index.html" class="btn btn-primary">Home</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid - Bootstrap VS CSS</title>
+    <link rel="stylesheet" href="./style/image-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/assets//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/assets/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MG8VMWYNKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MG8VMWYNKH');
+</script>
+<body>
+
+<div class="container">
+    
+    <section class="section bg-light">
+      <h2>Code Examples</h2>
+      <h4>CSS Grid</h4>
+      <div class="subsection">
+        <div class="container-img">
+          <div><img src="imgs/normal1.jpg"/></div>
+          <div class="vertical"><img src="imgs/vertical1.png"/></div>
+          <div class="horizontal"><img src="imgs/horizontal1.png"/></div>
+          <div><img src="imgs/normal2.jpg"/></div>
+          <div><img src="imgs/normal3.jpg"/></div>
+          <div class="big"><img src="imgs/big1.jpg"/></div>
+          <div><img src="imgs/normal4.jpg"/></div>
+          <div class="vertical"><img src="imgs/vertical2.jpg"/></div>
+          <div><img src="imgs/normal5.jpg"/></div>
+          <div class="horizontal"><img src="imgs/horizontal2.jpg"/></div>
+          <div><img src="imgs/normal6.jpg"/></div>
+          <div class="big"><img src="imgs/big2.jpg"/></div>
+          <div><img src="imgs/normal7.jpg"/></div>
+          <div class="horizontal"><img src="imgs/horizontal3.jpg"/></div>
+          <div><img src="imgs/normal8.jpg"/></div>
+          <div class="big"><img src="imgs/big3.jpg"/></div>
+          <div><img src="imgs/normal9.jpg"/></div>
+          <div class="vertical"><img src="imgs/vertical3.jpg"/></div>
+        </div>
+      </div>
+
+    <!-- Start of Bootstrap Grid Layout -->
+    <br>
+    <h4 class="h4-bootstrap">Bootstrap</h4>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal1.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal2.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+          <img src="imgs/horizontal1.png" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal3.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal4.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-lg-6 mb-3">
+          <img src="imgs/big1.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal5.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/vertical1.png" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+          <img src="imgs/horizontal2.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal6.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal7.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-lg-6 mb-3">
+          <img src="imgs/big2.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal8.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/vertical2.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+          <img src="imgs/horizontal3.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <img src="imgs/normal9.jpg" class="img-fluid"/>
+      </div>
+      <div class="col-12 col-lg-6 mb-3">
+          <img src="imgs/big3.jpg" class="img-fluid"/>
+      </div>
+  </div>
+
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
